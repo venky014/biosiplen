@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BioSiplen – Growing Green, Growing Safe</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .floating-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .bg-nature {
+      background: url('https://images.unsplash.com/photo-1606112219348-204d7d8b94ee?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+    }
+    .animate-subtle {
+      animation: float 6s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+      100% { transform: translateY(0px); }
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#home" class="text-xl font-bold text-green-700">BioSiplen</a>
+      <div class="space-x-6 hidden md:flex">
+        <a href="#home" class="text-gray-700 hover:text-green-600 transition">Home</a>
+        <a href="#about" class="text-gray-700 hover:text-green-600 transition">About</a>
+        <a href="#products" class="text-gray-700 hover:text-green-600 transition">Products</a>
+        <a href="#customers" class="text-gray-700 hover:text-green-600 transition">Customers</a>
+        <a href="#achievements" class="text-gray-700 hover:text-green-600 transition">Achievements</a>
+        <a href="#team" class="text-gray-700 hover:text-green-600 transition">Team</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Landing -->
+<section id="home" class="h-screen flex items-center justify-center text-white text-center relative animate-fertilizer" style="background-size: cover; background-position: center;">
+  <div class="absolute inset-0 z-0 bg-cover bg-center animate-home-slide" style="background-image: url('images/slide1.png'); opacity: 1;"></div>
+  <div class="absolute inset-0 z-0 bg-cover bg-center animate-home-slide delay-1" style="background-image: url('images/slide2.png');"></div>
+  <div class="absolute inset-0 z-0 bg-cover bg-center animate-home-slide delay-2" style="background-image: url('images/slide3.png');"></div>
+  <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+  <div class="z-20 animate-subtle max-w-2xl">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">BioSiplen</h1>
+    <p class="text-xl md:text-2xl mb-4">Growing Green, Growing Safe</p>
+    <p class="text-base md:text-lg mb-6">We are committed to revolutionizing Indian agriculture with safe, organic, and effective fertilizer solutions that nurture the earth and our farmers' future.</p>
+    <a href="#about" class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-full transition">Explore Our Vision</a>
+  </div>
+</section>
+
+<style>
+@keyframes home-slide {
+  0%, 33.33% { opacity: 1; }
+  33.34%, 100% { opacity: 0; }
+}
+.animate-home-slide {
+  animation: home-slide 15s infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.animate-home-slide.delay-1 {
+  animation-delay: 5s;
+}
+.animate-home-slide.delay-2 {
+  animation-delay: 10s;
+}
+</style>
+
+  <section id="about" class="py-20 px-6 bg-white w-full">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10">About BioSiplen</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div class="bg-green-50 p-6 rounded-xl shadow-md">
+        <h3 class="text-2xl font-semibold mb-2 text-green-700">Our Vision</h3>
+        <p class="text-gray-700">To transform Indian agriculture into 100% chemical-free, sustainable farming practices that support health, biodiversity, and soil vitality.</p>
+      </div>
+      <div class="bg-green-50 p-6 rounded-xl shadow-md">
+        <h3 class="text-2xl font-semibold mb-2 text-green-700">Our Mission</h3>
+        <p class="text-gray-700">To empower farmers with innovative organic solutions and promote eco-friendly cultivation through education, accessibility, and technology.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Products -->
+  <section id="products" class="py-20 px-6 bg-green-50 w-full">
+  <div class="max-w-full mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10">Our Products</h2>
+    <div class="overflow-x-auto pb-4">
+      <div class="flex space-x-6 px-6 w-max">
+        <div class="min-w-[260px] h-[380px] bg-white rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300 p-4 flex flex-col items-center text-center">
+          <img src="images/rootpro.png" alt="RootPro" class="w-40 h-60 object-contain mb-4">
+          <h3 class="font-semibold text-xl mb-1">BioSiplen RootPro</h3>
+          <p class="text-sm text-gray-600">For Seed Germination & Root Development</p>
+        </div>
+        <div class="min-w-[260px] h-[380px] bg-white rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300 p-4 flex flex-col items-center text-center">
+          <img src="images/growmax.png" alt="GrowMax" class="w-40 h-60 object-contain mb-4">
+          <h3 class="font-semibold text-xl mb-1">BioSiplen GrowMax</h3>
+          <p class="text-sm text-gray-600">For Vegetative Growth (Leaves & Stems)</p>
+        </div>
+        <div class="min-w-[260px] h-[380px] bg-white rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300 p-4 flex flex-col items-center text-center">
+          <img src="images/bloomup.png" alt="BloomUp" class="w-40 h-60 object-contain mb-4">
+          <h3 class="font-semibold text-xl mb-1">BioSiplen BloomUp</h3>
+          <p class="text-sm text-gray-600">For Flowering Stage</p>
+        </div>
+        <div class="min-w-[260px] h-[380px] bg-white rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300 p-4 flex flex-col items-center text-center">
+          <img src="images/fruitsure.png" alt="FruitSure" class="w-40 h-60 object-contain mb-4">
+          <h3 class="font-semibold text-xl mb-1">BioSiplen FruitSure</h3>
+          <p class="text-sm text-gray-600">For Fruiting & Yield Boosting</p>
+        </div>
+        <div class="min-w-[260px] h-[380px] bg-white rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300 p-4 flex flex-col items-center text-center">
+          <img src="images/gaurdx.png" alt="GuardX" class="w-40 h-60 object-contain mb-4">
+          <h3 class="font-semibold text-xl mb-1">BioSiplen GuardX</h3>
+          <p class="text-sm text-gray-600">For Pest & Disease Protection</p>
+        </div>
+        <div class="min-w-[260px] h-[380px] bg-white rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300 p-4 flex flex-col items-center text-center">
+          <img src="images/revive.png" alt="Revive" class="w-40 h-60 object-contain mb-4">
+          <h3 class="font-semibold text-xl mb-1">BioSiplen Revive</h3>
+          <p class="text-sm text-gray-600">For Recovery & Soil Rejuvenation</p>
+        </div>
+        <div class="min-w-[260px] h-[380px] bg-white rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300 p-4 flex flex-col items-center text-center">
+          <img src="images/weedoff.png" alt="WeedOff" class="w-40 h-60 object-contain mb-4">
+          <h3 class="font-semibold text-xl mb-1">BioSiplen WeedOff</h3>
+          <p class="text-sm text-gray-600">For Organic Weed Control</p>
+        </div>
+        <div class="min-w-[260px] h-[380px] bg-white rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300 p-4 flex flex-col items-center text-center">
+          <img src="images/micronmax.png" alt="MicronMix" class="w-40 h-60 object-contain mb-4">
+          <h3 class="font-semibold text-xl mb-1">BioSiplen MicronMix</h3>
+          <p class="text-sm text-gray-600">For Micronutrient Supplementation</p>
+        </div>
+        <div class="min-w-[260px] h-[380px] bg-white rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300 p-4 flex flex-col items-center text-center">
+          <img src="images/bioboost.png" alt="BioBoost" class="w-40 h-60 object-contain mb-4">
+          <h3 class="font-semibold text-xl mb-1">BioSiplen BioBoost</h3>
+          <p class="text-sm text-gray-600">For Overall Plant Energy & Immunity</p>
+        </div>
+        <div class="min-w-[260px] h-[380px] bg-white rounded-3xl shadow-lg hover:scale-105 transition-transform duration-300 p-4 flex flex-col items-center text-center">
+          <img src="images/soilrich.png" alt="SoilRich" class="w-40 h-60 object-contain mb-4">
+          <h3 class="font-semibold text-xl mb-1">BioSiplen SoilRich</h3>
+          <p class="text-sm text-gray-600">For Soil Conditioning & Organic Matter Enrichment</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Customers Section -->
+<section id="customers" class="py-20 px-6 bg-white" style="height:fit-content;">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10">Our Customers</h2>
+    <div class="grid md:grid-cols-2 gap-20 items-center justify-center">
+      <!-- Bar Chart -->
+      <div>
+        <canvas id="farmerBarChart" height="200"></canvas>
+      </div>
+
+      <!-- Doughnut Chart -->
+      <div>
+        <canvas id="cropDonutChart" height="150"></canvas>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  // Bar Chart for Farmer Types
+  const ctx1 = document.getElementById('farmerBarChart').getContext('2d');
+  new Chart(ctx1, {
+    type: 'bar',
+    data: {
+      labels: [
+        'Small Scale Farmers', 'Large Scale Farmers', 'Terrace Gardeners',
+        'Nurseries', 'Organic Farmers', 'Agroforestry Farmers', 'Aquaponic Growers'
+      ],
+      datasets: [{
+        label: 'Farmers',
+        data: [40, 20, 10, 10, 10, 5, 5],
+        backgroundColor: '#4d7c0f'
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: {
+          label: function(ctx) {
+            return `${ctx.parsed.y}%`;
+          }
+        }},
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: {
+            callback: function(value) { return value + '%' }
+          }
+        }
+      }
+    }
+  });
+
+  // Donut Chart for Crop Types
+  const ctx2 = document.getElementById('cropDonutChart').getContext('2d');
+  new Chart(ctx2, {
+    type: 'doughnut',
+    data: {
+      labels: ['Seasonal Crops', 'Commercial Crops', 'Short-Term Crops', 'Long-Term Crops'],
+      datasets: [{
+        data: [40, 20, 20, 20],
+        backgroundColor: ['#65a30d', '#15803d', '#facc15', '#38bdf8']
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'right',
+          labels: { boxWidth: 20 }
+        }
+      },
+      cutout: '60%'
+    }
+  });
+</script>
+
+
+<section id="achievements" class="py-20 px-6 bg-white w-full">
+  <div class="w-full mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10">Our Achievements</h2>
+    <div class="overflow-hidden pb-4 relative">
+      <div class="flex space-x-6 w-max animate-scroll-slide">
+        <div class="flex flex-row items-center bg-green-100 rounded-xl shadow-lg p-6 min-w-[600px]">
+          <img src="images/aitam.jpg" alt="AITAM RISE" class="h-32 w-32 object-cover rounded-full mr-6">
+          <div>
+            <h3 class="font-semibold text-lg mb-1">AITAM RISE Incubation</h3>
+            <p class="text-sm">Recognized and incubated under AITAM’s RISE program.</p>
+          </div>
+        </div>
+        <div class="flex flex-row items-center bg-green-100 rounded-xl shadow-lg p-6 min-w-[600px]">
+          <img src="images/10.png" alt="100+ Farmers" class="h-32 w-32 object-cover rounded-full mr-6">
+          <div>
+            <h3 class="font-semibold text-lg mb-1">10+ Farmers Onboarded</h3>
+            <p class="text-sm">Successfully onboarded more than 10 farmers.</p>
+          </div>
+        </div>
+        <div class="flex flex-row items-center bg-green-100 rounded-xl shadow-lg p-6 min-w-[600px]">
+          <img src="images/award.png" alt="Award Recognition" class="h-32 w-32 object-cover rounded-full mr-6">
+          <div>
+            <h3 class="font-semibold text-lg mb-1">Award Recognition</h3>
+            <p class="text-sm">Awarded by local agricultural bodies for innovation.</p>
+          </div>
+        </div>
+        <div class="flex flex-row items-center bg-green-100 rounded-xl shadow-lg p-6 min-w-[600px]">
+          <img src="images/expo.png" alt="Expo Participation" class="h-32 w-32 object-cover rounded-full mr-6">
+          <div>
+            <h3 class="font-semibold text-lg mb-1">AgriTech Expo Participation</h3>
+            <p class="text-sm">Showcased our product range at leading AgriTech expos.</p>
+          </div>
+        </div>
+        <!-- Cloned items for seamless loop -->
+        <div class="flex flex-row items-center bg-green-100 rounded-xl shadow-lg p-6 min-w-[600px]">
+          <img src="images/aitam.jpg" alt="AITAM RISE" class="h-32 w-32 object-cover rounded-full mr-6">
+          <div>
+            <h3 class="font-semibold text-lg mb-1">AITAM RISE Incubation</h3>
+            <p class="text-sm">Recognized and incubated under AITAM’s RISE program.</p>
+          </div>
+        </div>
+        <div class="flex flex-row items-center bg-green-100 rounded-xl shadow-lg p-6 min-w-[600px]">
+          <img src="images/farmers.jpg" alt="100+ Farmers" class="h-32 w-32 object-cover rounded-full mr-6">
+          <div>
+            <h3 class="font-semibold text-lg mb-1">100+ Farmers Onboarded</h3>
+            <p class="text-sm">Successfully onboarded more than 100 farmers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+@keyframes scroll-slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll-slide {
+  animation: scroll-slide 30s linear infinite;
+}
+</style>
+
+  <!-- Team -->
+  
+<section id="team" class="py-20 px-6 bg-green-50 w-full">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10">Our Core Team</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+      <div class="bg-white p-4 rounded-lg shadow-lg border-4 border-white hover:shadow-2xl transition">
+        <img src="images/20250630_151734.jpg" alt="Venu Gopalarao" class="rounded-lg w-full h-72 object-cover mb-4">
+        <h3 class="text-xl font-semibold">Venu Gopalarao</h3>
+        <p class="text-green-700 text-sm">Founder</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-lg border-4 border-white hover:shadow-2xl transition">
+        <img src="images/20250630_151637.jpg" alt="Sandeep Kumar" class="rounded-lg w-full h-72 object-cover mb-4">
+        <h3 class="text-xl font-semibold">Sandeep Kumar</h3>
+        <p class="text-green-700 text-sm">Co-Founder</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-lg border-4 border-white hover:shadow-2xl transition">
+        <img src="images/suchitra.jpg" alt="Suchitra" class="rounded-lg w-full h-72 object-cover mb-4">
+        <h3 class="text-xl font-semibold">Suchitra</h3>
+        <p class="text-green-700 text-sm">Marketing Head</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mentors" class="py-20 px-6 bg-white w-full">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10">Our Mentors</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+      <div class="bg-green-50 p-6 rounded-lg shadow-md hover:shadow-xl transition">
+        <img src="images/mentor1 .jpg" alt="Mentor 1" class="rounded-full w-40 h-40 mx-auto mb-4 object-cover">
+        <h3 class="text-xl font-semibold">Gangu Ramarao</h3>
+        <p class="text-green-700 text-sm">Farmer</p>
+        <p>50+ Years Experience in Farming</p>
+      </div>
+      <div class="bg-green-50 p-6 rounded-lg shadow-md hover:shadow-xl transition">
+        <img src="images/mentor2.png" alt="Mentor 2" class="rounded-full w-40 h-40 mx-auto mb-4 object-cover">
+        <h3 class="text-xl font-semibold">Kolli Dhanayya</h3>
+        <p class="text-green-700 text-sm">Farmer & Advisor</p>
+        <p>35+ Years Experience in Farming</p>
+      </div>
+      <div class="bg-green-50 p-6 rounded-lg shadow-md hover:shadow-xl transition">
+        <img src="images/mentor3.jpg" alt="Mentor 3" class="rounded-full w-40 h-40 mx-auto mb-4 object-cover">
+        <h3 class="text-xl font-semibold">Manoj Kumar Bada Ghar Wala</h3>
+        <p class="text-green-700 text-sm">Product Development Mentor</p>
+        <p>AIM(NITI Aayog), T-Hub, BVIC, AIC-ALEAP AIC-SANGAM</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white py-6">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-4 md:mb-0">Made with 🌱 by BioSiplen Team</div>
+      <div class="flex space-x-4">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/biosiplen/"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
